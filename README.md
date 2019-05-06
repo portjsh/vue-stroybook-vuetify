@@ -9,6 +9,10 @@ npm install
 ```
 npm run serve
 ```
+### Compiles and hot-reloads storybook
+```
+npm run storybook
+```
 
 ### Compiles and minifies for production
 ```
