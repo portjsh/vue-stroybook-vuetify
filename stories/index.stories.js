@@ -10,6 +10,7 @@ import Welcome from './Welcome';
 
 
 import StatsCard from '../src/components/common/StatsCard.vue'
+import StyleGuide from '../src/components/common/StyleGuide.vue'
 
 storiesOf('Welcome', module).add('to Storybook', () => ({
   components: { Welcome },
@@ -41,12 +42,19 @@ storiesOf('Button', module)
   .add('stats-card default color', () => ({
     components: { StatsCard },
     template:
-      '<v-container grid-list-xl fluid><v-layout row wrap><v-flex xs4><stats-card title="1.200" sub-title="assigned credits"/></v-flex></v-layout></v-container>'
+      '<v-container grid-list-xl fluid><v-layout row wrap><v-flex xs4><stats-card title="1.200" sub-title="assigned credits" icon="mdi-plus"/></v-flex></v-layout></v-container>'
   }))
   .add('stats-card green color', () => ({
     components: { StatsCard },
     template:
       '<v-container grid-list-xl fluid><v-layout row wrap><v-flex xs4><stats-card title="1.200" sub-title="assigned credits" color="green" icon="mdi-plus" /></v-flex></v-layout></v-container>'
   }))
+  storiesOf('StyleGuide', module)
+  .add('style-guide ', () => ({
+    components: { StyleGuide },
+    template:
+      '<style-guide title="1.200" sub-title="assigned credits" icon="mdi-plus"/>'
+  }))
+  
 
 /* eslint-enable react/react-in-jsx-scope */

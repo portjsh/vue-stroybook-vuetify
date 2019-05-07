@@ -11,9 +11,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { configure, addDecorator } from "@storybook/vue";
 import Vue from "vue";
+import "../src/scss/colors.scss";
 import Vuetify from "vuetify";
 import "vuetify/dist/vuetify.css";
-
 Vue.use(Vuetify, {
   iconfont: "md"
 });
